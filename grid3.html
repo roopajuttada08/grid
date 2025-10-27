@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            margin:20px;
+            height: 200px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+        }
+        .child1{
+            background-color: palevioletred;
+            grid-column: 1/4;
+        }
+        .child2{
+            background-color: aqua;
+            grid-column: 1/2;
+        }  
+        .child3{
+            background-color: aquamarine;
+            grid-column: 2/4;
+        }  
+        .child4{
+            background-color: blueviolet;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html">Go Back to Home</a>
+    <div class="parent">
+        <div class="child1">panipuri</div>
+        <div class="child2">chat</div>
+        <div class="child3">noodels</div>
+        <div class="child4">egg rool</div>
+    </div>
+</body>
+</html>
