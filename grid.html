@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px; */
+            background-color: aqua;
+        }
+        .parent{
+            height: 100px;
+            width: 100%;
+            gap:10px;
+            display: grid;
+            grid-template-areas:
+            'child1 child1 child1 child2 child2 child3'
+            'child1 child1 child1 child2 child2 child3'
+            'child1 child1 child1 child2 child2 child3'
+            'child1 child1 child1 child2 child2 child4'
+            'child1 child1 child1 child5 child5 child4'
+            'child1 child1 child1 child5 child5 child6'
+            'child1 child1 child1 child5 child5 child6'
+            'child1 child1 child1 child5 child5 child6'
+            'child1 child1 child1 child7 child7 child7'
+            'child8 child8 child9 child7 child7 child7'
+            'child8 child8 child9 child7 child7 child7'
+            'child8 child8 child10 child7 child7 child7'
+            'child8 child8 child10 child7 child7 child7'
+            'child11 child11 child12 child7 child7 child7'
+            'child11 child11 child12 child7 child7 child7'
+            'child11 child11 child13 child7 child7 child7'
+            'child11 child11 child13 child14 child14 child15'
+            'child16 child16 child16 child14 child14 child15'
+            'child16 child16 child16 child14 child14 child17'
+            'child16 child16 child16 child18 child18 child17'
+            'child16 child16 child16 child18 child18 child19'
+            'child16 child16 child16 child18 child18 child19'
+            'child16 child16 child16 child18 child18 child19'
+            'child20 child20 child20 child20 child21 child21'
+            'child20 child20 child20 child20 child21 child21'
+            'child20 child20 child20 child20 child21 child21'
+            'child20 child20 child20 child20 child22 child22'
+            'child20 child20 child20 child20 child22 child22'
+            'child20 child20 child20 child20 child22 child22'
+            'child20 child20 child20 child20 child23 child23'
+            'child20 child20 child20 child20 child23 child23'
+            'child20 child20 child20 child20 child23 child23';   
+        }
+        .parent>img{
+            height: 100%;
+            width: 100%;
+            border: 2px solid white;
+        }
+        .child1{
+            grid-area: child1;
+            height: 100%;
+            width:100%;
+        }
+        .child2{
+            grid-area: child2; 
+             height: 100%;
+            width:100%;  
+        }
+        .child3{
+            grid-area: child3;
+             height: 100%;
+            width:100%;
+        }
+        .child4{
+            grid-area: child4;
+             height: 100%;
+            width:100%;
+        }
+        .child5{
+            grid-area: child5;
+             height: 100%;
+            width:100%;    
+        }
+        .child6{
+            grid-area: child6;   
+             height: 100%;
+            width:100%; 
+        }
+        .child7{
+            grid-area: child7;   
+             height: 100%;
+            width:100%;
+        }
+        .child8{
+            grid-area: child8;  
+             height: 100%;
+            width:100%;  
+        }
+        .child9{
+            grid-area: child9;  
+             height: 100%;
+            width:100%;  
+        }
+        .child10{
+            grid-area: child10; 
+             height: 100%;
+            width:100%;   
+        }
+        .child11{
+            grid-area: child11; 
+             height: 100%;
+            width:100%;   
+        }
+        .child12{
+            grid-area: child12; 
+             height: 100%;
+            width:100%;   
+        }
+        .child13{
+            grid-area: child13;  
+             height: 100%;
+            width:100%;  
+        }
+        .child14{
+            grid-area: child14;   
+             height: 100%;
+            width:100%; 
+        }
+        .child15{
+            grid-area: child15;   
+             height: 100%;
+            width:100%; 
+        }
+        .child16{
+            grid-area: child16; 
+             height: 100%;
+            width:100%;   
+        }
+        .child17{
+            grid-area: child17; 
+             height: 100%;
+            width:100%;  
+        }
+        .child18{
+            grid-area: child18;  
+             height: 100%;
+            width:100%;  
+        }
+        .child19{
+            grid-area: child19;  
+             height: 100%;
+            width:100%; 
+        }
+        .child20{
+            grid-area: child20; 
+             height: 100%;
+            width:100%;   
+        }
+        .child21{
+            grid-area: child21;   
+             height: 100%;
+            width:100%; 
+        }
+        .child22{
+            grid-area:child22;  
+             height: 100%;
+            width:100%; 
+        }
+        .child23{
+            grid-area: child23;   
+             height: 100%;
+            width:100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/03/10/0/FNK_BEST-CHICKEN-AND-RICE-H_s4x3.jpg.rend.hgtvcom.616.462.85.suffix/1583851621211.webp" alt="" class="child1">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/kale-and-chickpea-toasts-6581b05e51b0a.jpg?crop=0.941xw:0.627xh;0.0337xw,0.146xh&resize=640:*" alt="" class="child2">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/finger-foods-beef-empanadas-1671735272.jpeg?crop=0.668xw:1.00xh;0.129xw,0" alt="" class="child3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-NCyUx8rZsE28IK-yjFY1AlBfT2d_pbN59g&s" alt="" class="child4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK-aB7yXnXi5O38HVMUq1LC57oFI7HlRToOw&s" alt="" class="child5">
+        <img src="https://media.theeverygirl.com/wp-content/uploads/2024/11/easy-dinner-recipes-no-cooking-the-everygirl-feature.jpg" alt="" class="child6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCd290zZ-66gFdsTEeqGL-QEbWNuuBHpf0Qw&s" alt="" class="child7">
+        <img src="https://img.buzzfeed.com/buzzfeed-static/static/2025-01/10/21/asset/9f9955c55ccd/sub-buzz-694-1736542875-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" alt="" class="child8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89FGhd8AgfBheeK4V_IDWnVmRtq2Df_xa8w&s" alt="" class="child9"> 
+        <img src="https://cdn1.foodviva.com/static-content/food-images/snacks-recipes/pani-puri/pani-puri.jpg"   alt=""  class="child10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89FGhd8AgfBheeK4V_IDWnVmRtq2Df_xa8w&s" alt="" class="child11">
+        <img src="https://img.buzzfeed.com/buzzfeed-static/static/2025-01/10/21/asset/9f9955c55ccd/sub-buzz-694-1736542875-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" alt="" class="child12">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89FGhd8AgfBheeK4V_IDWnVmRtq2Df_xa8w&s" alt="" class="child13">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/03/10/0/FNK_BEST-CHICKEN-AND-RICE-H_s4x3.jpg.rend.hgtvcom.616.462.85.suffix/1583851621211.webp" alt="" class="child14">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/kale-and-chickpea-toasts-6581b05e51b0a.jpg?crop=0.941xw:0.627xh;0.0337xw,0.146xh&resize=640:*" alt="" class="child15">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/finger-foods-beef-empanadas-1671735272.jpeg?crop=0.668xw:1.00xh;0.129xw,0" alt="" class="child16">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-NCyUx8rZsE28IK-yjFY1AlBfT2d_pbN59g&s" alt="" class="child17">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK-aB7yXnXi5O38HVMUq1LC57oFI7HlRToOw&s" alt="" class="child18">
+        <img src="https://media.theeverygirl.com/wp-content/uploads/2024/11/easy-dinner-recipes-no-cooking-the-everygirl-feature.jpg" alt="" class="child19">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/paneer-butter-masala-recipe.webp" alt="" class="child20">
+        <img src="https://static.toiimg.com/thumb/60043279.cms?imgsize=195460&width=800&height=800" alt="" class="child21">
+        <img src="https://nestle.fitterfly.in/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBczB1IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dc834b67ec92946b0a77424a261aaa68e8b54238/20354_Whole_Wheat__Paneer_Vegetable_Shawarma.webp" alt="" class="child22">
+        <img src="https://pipingpotcurry.com/wp-content/uploads/2023/12/Gulab-Jamun-Recipe-Piping-Pot-Curry.jpg" alt="" class="child23">
+    </div>
+</body>
+</html>
